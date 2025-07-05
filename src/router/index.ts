@@ -6,7 +6,7 @@ const router = createRouter({
     {
       path: '/blog/:slug',
       name: 'blog',
-      component: () => import('@/views/BlogView.vue'),
+      component: () => import('@/components/BlogView.vue'),
       props: true,
     },
   ],

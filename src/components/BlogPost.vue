@@ -3,9 +3,12 @@
     <div class="max-w-3xl mx-auto">
       <!-- ▸ Header ------------------------------------------------------- -->
       <header class="flex items-center justify-between mb-10">
-        <h1 class="text-xl font-semibold">Arun Jeyamari</h1>
+       <div>
+        <mark class="px-2 text-white bg-blue-800 rounded-sm dark:bg-blue-500">Written By</mark>
+        <h1 class="text-xl font-bold">Arun Jeyamari</h1>
+       </div>
         <a :href="githubUrl" class="text-blue-400 underline text-sm">
-          Follow me on : GitHub
+          Follow on : GitHub
         </a>
       </header>
 
@@ -15,7 +18,7 @@
       >
         <!-- title + date are optional props -->
         <h2 class="!mb-2">{{ title }}</h2>
-        <p v-if="date" class="text-sm text-gray-400 !mt-0">
+        <p v-if="date" class="text-sm text-gray-300 !mt-0 !mb-2">
           {{ formattedDate }}
         </p>
 

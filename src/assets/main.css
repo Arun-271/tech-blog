@@ -3,16 +3,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --color-global-grey: #16161E;
-  --font-global-color: white;
-}
 
-body {
-  color: var(--font-global-color);
-  background-color: var(--color-global-grey);
-}
-
+/* Custom Blog style */
 .blog-container {
  max-width: 100%;
  margin: 0 auto;
@@ -331,64 +323,61 @@ body {
 
 /* Dark mode support */
 @media (prefers-color-scheme: dark) {
- .blog-container {
-   background-color: #1a202c;
-   color: #e2e8f0;
- }
+  .blog-container {
+    background-color: #1a202c;
+    color: #e2e8f0;
+  }
 
+  .blog-container h1,
+  .blog-container h2,
+  .blog-container h3,
+  .blog-container h4,
+  .blog-container h5,
+  .blog-container h6 {
+    color: #f7fafc;
+  }
 
- .blog-container h1,
- .blog-container h2,
- .blog-container h3,
- .blog-container h4,
- .blog-container h5,
- .blog-container h6 {
-   color: #f7fafc;
- }
+  .blog-container p,
+  .blog-container li {
+    color: #e2e8f0;
+  }
 
+  .blog-container strong {
+    color: #fff;
+    font-weight: 700;
+  }
 
- .blog-container p {
-   color: #e2e8f0;
- }
+  .blog-container blockquote {
+    background-color: #2d3748;
+    color: #cbd5e0;
+  }
 
+  .blog-container code {
+    background-color: #2d3748;
+    color: #68d391;
+  }
 
- .blog-container blockquote {
-   background-color: #2d3748;
-   color: #cbd5e0;
- }
+  .blog-container pre {
+    background-color: #0d1117;
+    color: #f0f6fc;
+  }
 
+  .blog-container table {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  }
 
- .blog-container code {
-   background-color: #2d3748;
-   color: #68d391;
- }
+  .blog-container th {
+    background-color: #2d3748;
+    color: #f7fafc;
+  }
 
+  .blog-container td {
+    border-bottom-color: #4a5568;
+  }
 
- .blog-container pre {
-   background-color: #0d1117;
-   color: #f0f6fc;
- }
-
-
- .blog-container table {
-   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
- }
-
-
- .blog-container th {
-   background-color: #2d3748;
-   color: #f7fafc;
- }
-
-
- .blog-container td {
-   border-bottom-color: #4a5568;
- }
-
-
- .blog-container tr:hover {
-   background-color: #2d3748;
- }
+  .blog-container tr:hover {
+    background-color: #2d3748;
+  }
 }
 
 
